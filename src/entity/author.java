@@ -49,5 +49,7 @@ public class author {
 	public void setCountry(String country) {
 		Country = country;
 	}
-	
+	public void add(){
+		
+	}
 }
