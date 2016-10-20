@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="entity.book" table="book">
+
+        <id name="ISBN" type = "int">
+           <generator class="assigned"/>
+        </id>
+        <property name="Title" type="java.lang.String"/>
+        <property name="AuthorID" type="int"/>
+        <property name="Publisher" type="java.lang.String"/>
+        <property name="PublishDate" type="java.lang.String"/>
+        <property name="Price" type="int"/>
+
+    </class>
+
+</hibernate-mapping>
+

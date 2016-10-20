@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="entity.Students" table="Students">
+		<id name="sid" column="s_id">			
+			<!-- 这个属性就是设置自增长序列，在bean 里面的id都不用直接给值，空的传过去就行，非常好用 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="sname" column="s_name"></property>
+		<property name="gender" column="s_gender"></property>
+		<property name="birthday" column="s_birthday" type="date"></property>
+		<property name="address" column="s_address"></property>
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="entity.author" table="author">
+
+        <id name="AuthorID" type = "int">
+            <generator class="assigned"/>
+        </id>
+        <property name="Name" type="java.lang.String"/>
+        <property name="Age" type="int"/>
+        <property name="Country" type="java.lang.String"/>
+
+
+    </class>
+
+</hibernate-mapping>
+
